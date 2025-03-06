@@ -1,0 +1,372 @@
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.button {
+  &__white {
+    background: $white;
+    border-radius: 40px;
+    color: $black;
+    padding: 8px 17px;
+  }
+
+  &__menu {
+    padding: 9px 19.5px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: $blue-gray2;
+    color: $black;
+    line-height: 17px;
+    transition: all 0.2s;
+
+    &-active {
+      background-color: $black;
+      color: $white;
+    }
+
+    &_circle {
+      border-radius: 100%;
+      background-color: $blue-gray2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      width: 20px;
+      transition: all 0.2s;
+
+      &-active {
+        background-color: $white;
+      }
+    }
+
+    &_circle2 {
+      border-radius: 100px;
+      background-color: $blue-gray2;
+      width: 5px;
+      height: 5px;
+      transition: all 0.2s;
+
+      &-active {
+        background-color: $black;
+      }
+    }
+  }
+
+  &__ceck {
+    background: transparent;
+    padding: 6px 10.5px;
+    color: $black;
+    border: 1px solid $black;
+    transition: all 0.2s;
+    border-radius: 28px;
+
+    &-active {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  &__video {
+    padding: 8px 0px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey;
+    color: $white;
+    border-radius: 40px;
+    max-width: 306px;
+    margin-bottom: 24px;
+  }
+
+  &__whiteBorder {
+    border: 1px solid $white;
+    color: $white;
+    background-color: inherit;
+    padding: 6px 10px;
+    border-radius: 20px;
+  }
+}
+
+.cardText {
+  position: relative;
+  width: 100%;
+  max-width: 305px;
+
+  &__info {
+    width: 100%;
+    background-color: $white2;
+    backdrop-filter: blur(44px);
+    border-radius: 16px;
+    border: 1.5px solid $black;
+    overflow: hidden;
+    display: flex;
+
+    &_content {
+      padding: 40px 35px;
+      width: 100%;
+      flex-shrink: 0;
+      transition: all 0.2s;
+
+      h4 {
+        color: $black;
+        margin-bottom: 4px;
+      }
+      p {
+        color: $medium-gray;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 8px);
+    top: 15px;
+    left: -4px;
+    height: calc(100% - 11px);
+    background-color: $black;
+    border-radius: 20px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $black;
+  width: 76px;
+}
+
+.accardion {
+  margin-block: 19px 13px;
+  width: 100%;
+  max-width: 314px;
+  position: relative;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &_block {
+      width: 100%;
+      padding: 5.5px 13px;
+      background-color: $white2;
+      border: 1px solid $black2;
+      color: $black2;
+      border-radius: 28px;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &_nav {
+      position: relative;
+      background-color: $black2;
+      width: calc(100% - 140px);
+      min-width: 150px;
+      max-width: 175px;
+      text-align: center;
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-page {
+        font-weight: 800;
+        font-size: 11px;
+        line-height: 1.2;
+        color: $white;
+      }
+
+      &-maxpage {
+        font-weight: 800;
+        font-size: 11px;
+        line-height: 1.2;
+        color: $white;
+      }
+
+      &-menu {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+
+        img {
+          cursor: pointer;
+          filter: invert(100%) grayscale(100%) contrast(100%) brightness(100%);
+        }
+      }
+
+      &-left {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 0;
+        left: -25px;
+        background-color: $black2;
+        clip-path: ellipse(25px 25px at 100% 0%);
+
+        &-active {
+          clip-path: none;
+
+          &::after {
+            content: '';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 0;
+            left: -13px;
+            border-radius: 100%;
+            background-color: $blue-gray;
+          }
+        }
+      }
+
+      &-right {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 0;
+        right: -25px;
+        background-color: $black2;
+        clip-path: ellipse(25px 25px at 0% 0%);
+
+        &-active {
+          clip-path: none;
+
+          &::after {
+            content: '';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 0;
+            right: -13px;
+            border-radius: 100%;
+            background-color: $blue-gray;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transform: all 0.5s;
+
+    &-active {
+      height: auto;
+      opacity: 1;
+    }
+
+    &_block {
+      width: 100%;
+      padding: 22px 11px;
+      background-color: $white2;
+      border: 1px solid $black2;
+      color: $black2;
+      border-radius: 16px;
+
+      h5 {
+        padding-bottom: 8px;
+        color: $black2;
+      }
+
+      p {
+        padding-bottom: 12px;
+        color: $medium-gray;
+      }
+    }
+
+    &_buttons {
+      padding-top: 10px;
+      display: flex;
+      width: 100%;
+      gap: 6px;
+    }
+
+    &_button {
+      color: $white;
+      background-color: $black2;
+      border-radius: 28px;
+      padding: 6px 16px;
+    }
+
+    &_exit {
+      width: 100%;
+      padding: 12px 0;
+      background-color: $white2;
+      border: 1px solid $black2;
+      color: $black2;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__blackBlock {
+    height: 8px;
+    width: calc(100% - 90px);
+    min-width: 200px;
+    max-width: 215px;
+    background-color: $black2;
+    position: relative;
+  }
+
+  &__rightMask {
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    top: 0;
+    right: -6px;
+    mask-image: url(../../assets/images/maskRight.png);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    overflow: hidden;
+  }
+
+  &__blockmask {
+    width: 6px;
+    height: 8px;
+    background-color: black;
+  }
+
+  &__leftMask {
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    top: 0;
+    left: -6px;
+    mask-image: url(../../assets/images/maskLeft.png);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    overflow: hidden;
+  }
+
+  &__blockmask {
+    width: 6px;
+    height: 8px;
+    background-color: black;
+  }
+}

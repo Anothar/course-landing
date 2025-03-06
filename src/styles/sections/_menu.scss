@@ -1,0 +1,35 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(68, 68, 68, 0);
+  transition: background 0.2s ease-in-out, left 0.2s ease-in-out 0.1s;
+  margin: 0;
+  padding: 0;
+  
+  &--open {
+    left: 0;
+    background: rgba(68, 68, 68, 0.7);
+    transition: left 0.2s ease-in-out, background 0.2s ease-in-out 0.1s;
+  }
+}
+
+.nav {
+  width: 189px;
+  height: 100%;
+  background-color: $blue-gray2;
+  border-end-end-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 16px 0 16px 16px;
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0 0;
+  }
+}

@@ -1,0 +1,223 @@
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @include onDesktop {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @include onDesktop {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @include onDesktop {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+.h3BigDesk {
+  @include onDesktop {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @include onDesktop {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  @include onDesktop {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}
+
+button {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.button-span {
+  @include onDesktop {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}
+
+.menu-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.headline-1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.headline-2 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.headline-3 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.headline-4 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.headline-5 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.headline-6 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.headline-7 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.headline-8 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.headline-9 {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.headline-10 {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1.2;
+
+  @include onDesktop {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+.headline-11 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+}
