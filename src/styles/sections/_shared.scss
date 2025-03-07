@@ -91,6 +91,22 @@ button {
     padding: 6px 10px;
     border-radius: 20px;
   }
+
+  &__grey {
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue-gray;
+    color: $black2;
+    border-radius: 40px;
+    border: 1px solid black;
+
+    .active {
+      background-color: $light-gray-3;
+    }
+  }
 }
 
 .cardText {
@@ -270,10 +286,11 @@ button {
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
-    transform: all 0.5s;
+    transition: all 0.2s;
 
     &-active {
       height: auto;
+      position: all;
       opacity: 1;
     }
 
