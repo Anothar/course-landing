@@ -1,6 +1,6 @@
 const CourseBenefits = () => {
   return (
-    <section className="section">
+    <section className="section section-1">
       <h2 className="section__title section-1__title">Кому буде корисний курс</h2>
 
       <div className="section-1__content">

@@ -10,6 +10,10 @@ button {
     border-radius: 40px;
     color: $black;
     padding: 8px 17px;
+
+    @include onDesktop {
+      padding: 16px 32px;
+    }
   }
 
   &__menu {
@@ -64,6 +68,10 @@ button {
     transition: all 0.2s;
     border-radius: 28px;
 
+    @include onDesktop {
+      padding: 6px 16px;
+    }
+
     &-active {
       color: $white;
       background-color: $black;
@@ -82,6 +90,19 @@ button {
     border-radius: 40px;
     max-width: 306px;
     margin-bottom: 24px;
+
+    @include onDesktop {
+      max-width: 100%;
+      padding: 12.7px 0;
+      gap: 29px;
+      background-color: $white;
+      color: $black;
+      margin: 0;
+
+      img {
+        width: 21.38px;
+      }
+    }
   }
 
   &__whiteBorder {
@@ -90,6 +111,11 @@ button {
     background-color: inherit;
     padding: 6px 10px;
     border-radius: 20px;
+
+    @include onDesktop {
+      padding: 8px 16px;
+      text-wrap: nowrap;
+    }
   }
 
   &__grey {
@@ -107,12 +133,45 @@ button {
       background-color: $light-gray-3;
     }
   }
+
+  &__black {
+    width: calc(100% - 32px);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    border-radius: 40px;
+    position: relative;
+    z-index: 2;
+
+    @include onDesktop {
+      padding: 16px;
+    }
+  }
+
+  &__nav {
+    background-color: #e2e6ee00;
+    padding: 8px 32px;
+    color: $white;
+    border-radius: 40px;
+
+    &.active {
+      background-color: $blue-gray;
+      color: $black;
+    }
+  }
 }
 
 .cardText {
   position: relative;
   width: 100%;
   max-width: 305px;
+
+  @include onDesktop {
+    max-width: 582px;
+  }
 
   &__info {
     width: 100%;
@@ -129,9 +188,17 @@ button {
       flex-shrink: 0;
       transition: all 0.2s;
 
+      @include onDesktop {
+        padding: 72.5px 29px;
+      }
+
       h4 {
         color: $black;
         margin-bottom: 4px;
+
+        @include onDesktop {
+          margin-bottom: 18px;
+        }
       }
       p {
         color: $medium-gray;
@@ -148,6 +215,13 @@ button {
     height: calc(100% - 11px);
     background-color: $black;
     border-radius: 20px;
+
+    @include onDesktop {
+      top: 6px;
+      left: -6px;
+      width: calc(100% + 12px);
+      height: calc(100%);
+    }
   }
 }
 
@@ -157,6 +231,14 @@ button {
   align-items: center;
   color: $black;
   width: 76px;
+
+  img {
+    cursor: pointer;
+  }
+
+  @include onDesktop {
+    width: 87px;
+  }
 }
 
 .accardion {
@@ -164,6 +246,11 @@ button {
   width: 100%;
   max-width: 314px;
   position: relative;
+
+  @include onDesktop {
+    margin: 0;
+    max-width: 466px;
+  }
 
   &__main {
     display: flex;
@@ -197,6 +284,10 @@ button {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include onDesktop {
+        max-width: 328px;
+      }
 
       &-page {
         font-weight: 800;
@@ -287,10 +378,15 @@ button {
     pointer-events: none;
     overflow: hidden;
     transition: all 0.2s;
+    z-index: 100;
+
+    @include onDesktop {
+      top: 58px;
+    }
 
     &-active {
       height: auto;
-      position: all;
+      pointer-events: all;
       opacity: 1;
     }
 
@@ -347,6 +443,10 @@ button {
     max-width: 215px;
     background-color: $black2;
     position: relative;
+
+    @include onDesktop {
+      max-width: 328px;
+    }
   }
 
   &__rightMask {

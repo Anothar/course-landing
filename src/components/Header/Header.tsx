@@ -4,6 +4,7 @@ import imgHeader from '../../assets/images/imgHeader.png';
 import imgHeader2 from '../../assets/images/imgHeader2.png';
 import iconsPerson from '../../assets/images/iconsPerson.png';
 import Exit from '../../assets/icons/Exit.svg';
+import { useState } from 'react';
 
 type Props = {
   isOpenMenu: boolean;
@@ -11,14 +12,26 @@ type Props = {
 }
 
 const Header: React.FC<Props> = ({isOpenMenu, setIsOpenMenu}) => {
+  const [activeItem, setActiveItem] = useState('Home');
+  const namesLink = ['Home', 'About us', 'Services', 'Portfolio', 'Blog', 'Pages', 'Contact us'];
+  const handleClick = (text: string) => {
+    setActiveItem(text);
+    setIsOpenMenu(false);
+  }
+
   return (
     <header className="header">
-      <div className='header__image'>
-        <div className='header__image_container'>
-          <img className='header__image_bg' src={imgHeader} alt='For header'/>
-          <img className='header__image_bg2' src={imgHeader2} alt='For header'/>
-        </div>
-      </div>
+      <nav className="nav">
+        <ul className='nav__content'>
+          {namesLink.map((item) => (
+            <li onClick={() => handleClick(item)} key={item}>
+              <button className={'button__nav ' + (activeItem === item ? 'active' : '')}>
+                {item}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
       <div className="header__head">
         <img src={Logo} alt='Logo'/>
@@ -32,6 +45,13 @@ const Header: React.FC<Props> = ({isOpenMenu, setIsOpenMenu}) => {
       </div>
 
       <div className='header__content'>
+        <div className='header__image'>
+          <div className='header__image_container'>
+            <img className='header__image_bg' src={imgHeader} alt='For header'/>
+            <img className='header__image_bg2' src={imgHeader2} alt='For header'/>
+          </div>
+        </div>
+
         <div className='header__info '>
           <h1 className='header__info_title'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.

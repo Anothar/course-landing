@@ -27,21 +27,21 @@ const Raview = () => {
 
   const variables = [
     [
-      { x: 340, y: 0 },
-      { x: 87, y: 29 },
-      { x: -428, y: 29 },
+      'first',
+      'second',
+      'three',
     ],
     [
-      { x: 252, y: 29 },
-      { x: 0, y: 0 },
-      { x: -253, y: 29 },
+      'first2',
+      'second2',
+      'three2',
     ],
     [
-      { x: 428, y: 29 },
-      { x: -88, y: 29 },
-      { x: -340, y: 0 },
+      'first3',
+      'second3',
+      'three3',
     ],
-  ]
+  ];
 
   return (
     <section className='section-6' style={{ position: 'relative' }}>
@@ -58,13 +58,11 @@ const Raview = () => {
         <img className='section-5__content_right' src={right} alt='To right' onClick={handleRightClick}/>
 
         <div
-          className={'section-6__element ' + (activeCourse === 0 ? 'active' : '')}
-          style={{
-            transform: `translate(${variables[activeCourse][0].x}px, ${variables[activeCourse][0].y}px)`,
-          }}
+          className={'section-6__element ' + (activeCourse === 0 ? 'active ' : ' ') + (variables[activeCourse][0])}
         >
+          <div className='dop'>“</div>
           <div className='info'>
-            <p className='headline-18'>ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+            <p className='headline-181'>ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
             <div>
               <p className='headline-19'>
                 Fairouz Mhmd
@@ -76,14 +74,12 @@ const Raview = () => {
           </div>
         </div>
 
-        <div 
-          className={'section-6__element ' + (activeCourse === 1 ? 'active' : '')}
-          style={{
-            transform: `translate(${variables[activeCourse][1].x}px, ${variables[activeCourse][1].y}px)`,
-          }}
+        <div
+          className={'section-6__element ' + (activeCourse === 1 ? 'active ' : '') + (variables[activeCourse][1])}
         >
+          <div className='dop'>“</div>
           <div className='info'>
-            <p className='headline-18'>ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+            <p className='headline-181'>ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
             <div>
               <p className='headline-19'>
                 Yusuf Amin
@@ -96,13 +92,11 @@ const Raview = () => {
         </div>
 
         <div 
-          className={'section-6__element ' + (activeCourse === 2 ? 'active' : '')}
-          style={{
-            transform: `translate(${variables[activeCourse][2].x}px, ${variables[activeCourse][2].y}px)`,
-          }}
+          className={'section-6__element ' + (activeCourse === 2 ? 'active ' : '') + (variables[activeCourse][2])}
         >
+          <div className='dop'>“</div>
           <div className='info'>
-            <p className='headline-18'>ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+            <p className='headline-181'>ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
             <div>
               <p className='headline-19'>
                 Fouad Osman

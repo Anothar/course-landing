@@ -22,7 +22,7 @@ const StudentCases = () => {
   const photos = [student1, student2, student3, student4, student5, student6, student7, student8, student9, student10, student11, student12];
 
   return (
-    <section className="section">
+    <section className="section section-2">
       <h2 className="section__title section-2__title">Кейси учнів</h2>
 
       <div className="section-2__content">

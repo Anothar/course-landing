@@ -4,6 +4,7 @@ import CoursePricing from "./components/CoursePricing";
 import CourseProgram from "./components/CourseProgram";
 import CourseSpeakers from "./components/CourseSpeakers";
 import ExpertHub from "./components/ExpertHub";
+import Form from "./components/Form";
 import LearningProgress from "./components/LearningProgress";
 import Raview from "./components/Raview";
 import StudentCases from "./components/StudentCases";
@@ -20,6 +21,7 @@ const Main = () => {
       <ExpertHub />
       <CoursePricing />
       <Raview />
+      <Form />
     </main>
   )
 };

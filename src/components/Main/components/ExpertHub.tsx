@@ -6,7 +6,7 @@ const ExpertHub = () => {
   const [activeCareer, setActiveCareer] = useState(0);
 
   return (
-    <section className="section">
+    <section className="section section-4">
       <h2 className="section__title section-4__title">Експертна спільнота</h2>
 
       <div className="section-4__content section-4__content2">
@@ -34,7 +34,7 @@ const ExpertHub = () => {
               Практика на реальных задачах
             </button>
           </article>
-          <article className="section-4__content_images">
+          <article className="section-4__content_images img2">
             <img
               src={expert1}
               alt='Expert'

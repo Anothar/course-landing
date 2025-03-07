@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import left from '../../../assets/icons/VectorLeft.svg';
 import right from '../../../assets/icons/VectorRight.svg';
 
@@ -25,21 +25,27 @@ const CoursePricing = () => {
     })
   };
 
+  useEffect(() => {
+    if (window.innerWidth >= 1280) {
+      setActiveCourse(1);
+    }
+  }, [window.innerWidth]);
+
   return (
-    <section style={{ position: 'relative' }}>
+    <section style={{ position: 'relative' }} className='section-5__main'>
       <h2 className="section__title section-5__title">Тарифи навчання</h2>
 
-      <div className='section-5__content_circles'>
+      <div className='section-5__content_circles price'>
         <div className={'item ' + (activeCourse === 0 ? 'active' : '')} onClick={() => setActiveCourse(0)}/>
         <div className={'item ' + (activeCourse === 1 ? 'active' : '')} onClick={() => setActiveCourse(1)}/>
         <div className={'item ' + (activeCourse === 2 ? 'active' : '')} onClick={() => setActiveCourse(2)}/>
       </div>
 
       <article className="section-5__content">
-        <img className='section-5__content_left' src={left} alt='To left' onClick={handleLeftClick}/>
-        <img className='section-5__content_right' src={right} alt='To right' onClick={handleRightClick}/>
+        <img className='section-5__content_left price' src={left} alt='To left' onClick={handleLeftClick}/>
+        <img className='section-5__content_right price' src={right} alt='To right' onClick={handleRightClick}/>
 
-        <div className={'section-5__content_info ' + (activeCourse === 0 ? 'section-5__content_info-active' : '')} style={{ transform: `translateX(${(activeCourse - 1) * -100}%)  ${activeCourse === 0 ? 'scale(1)' : 'scale(0.95)'}` }}>
+        <div className={'section-5__content_info price ' + (activeCourse === 0 ? 'section-5__content_info-active' : '')} style={{ transform: `translateX(${(activeCourse - 1) * -100}%)  ${activeCourse === 0 ? 'scale(1)' : 'scale(0.95)'}` }}>
           <h4 className={'headline-12 h4 ' + (activeCourse === 0 ? 'active' : '')}>Колеги</h4>
 
           <p className={'headline-13 p1 ' + (activeCourse === 0 ? 'active' : '')}>Діє при оплаті навчання групи з трьох осіб</p>

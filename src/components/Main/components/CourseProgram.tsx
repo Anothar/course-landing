@@ -19,10 +19,10 @@ const CourseProgram = () => {
 
 
   return (
-    <section className="section">
+    <section className="section section-2">
       <h2 className="section__title section-2__title">Програма курсу</h2>
 
-      <div className="section-2__content">
+      <div className="section-2__content" style={{ position: 'relative', zIndex: '100'}}>
           <article className="section-2__content_photos">
             {photos.map(photo => (
               <img
@@ -35,7 +35,7 @@ const CourseProgram = () => {
             ))}
           </article>
 
-          <article className="section-2__content_info">
+          <article className="section-2__content_info course">
             <CardText items={studentCasesTexts[activeCourse]} numberItem={activeButton} />
 
             <Accardion activePage={activeCourse} setActive={setActiveCourse}/>
