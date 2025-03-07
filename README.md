@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Landing Page  
 
-## Available Scripts
+Односторінковий лендинг, розроблений на **React**. Проєкт містить **складні анімації**, стилі написані на **SCSS**, а також використовується **JavaScript** для взаємодії з елементами сторінки.  
 
-In the project directory, you can run:
+## Інфо
+- **Відкрити онлайн** – [Посилання](https://anothar.github.io/course-landing/)
+- **FigmaDesign** – [Дизайн](https://www.figma.com/design/ZJm9ctsXqzX3rY5QuKTTXz/%D0%A2.Z.14-%D0%92%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0-Frontend?node-id=8076-1087&t=78H2VgV0g4wptKv6-0)
 
-### `npm start`
+## ⚡ Технології  
+- **React** – компонентний підхід  
+- **JavaScript** – логіка взаємодії  
+- **SCSS** – кастомна стилізація  
+- **CSS-анімації** – для складних ефектів  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🔧 Вимоги  
+- **Node.js** `v14+`  
+- **npm** або **yarn**  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 Установка та запуск  
 
-### `npm test`
+### 1️⃣ Клонування репозиторію  
+```bash
+git clone https://github.com/Anothar/course-landing.git
+cd your-repo
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2️⃣ Встановлення залежностей  
+```bash
+npm install
+# або
+yarn install
+```
 
-### `npm run build`
+### 3️⃣ Запуск у режимі розробки  
+```bash
+npm start
+# або
+yarn start
+```
+Лендинг відкриється за адресою [`http://localhost:3000`](http://localhost:3000).  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Збірка для продакшену  
+```bash
+npm run build
+# або
+yarn build
+```
+Готові файли будуть у папці `dist` або `build` (залежить від конфігурації).  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
