@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -30,4 +31,10 @@ p {
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
   transition: all 0.2s;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

@@ -612,6 +612,7 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 4;
+      cursor: pointer;
 
       @include onDesktop {
         &.price {
@@ -626,6 +627,7 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 4;
+      cursor: pointer;
 
       @include onDesktop {
         &.price {
@@ -1004,6 +1006,7 @@
       left: -10px;
       width: 350px;
       transform: rotate(-177.34deg);
+      pointer-events: none;
 
       @include onDesktop {
         left: 610px;

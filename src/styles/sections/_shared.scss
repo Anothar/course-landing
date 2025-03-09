@@ -11,6 +11,14 @@ button {
     color: $black;
     padding: 8px 17px;
 
+    &:hover {
+      background: $blue-gray;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
     @include onDesktop {
       padding: 16px 32px;
     }
@@ -26,6 +34,11 @@ button {
     color: $black;
     line-height: 17px;
     transition: all 0.2s;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
 
     &-active {
       background-color: $black;
@@ -68,6 +81,10 @@ button {
     transition: all 0.2s;
     border-radius: 28px;
 
+    &:hover {
+      background-color: $grey2;
+    }
+
     @include onDesktop {
       padding: 6px 16px;
     }
@@ -75,6 +92,10 @@ button {
     &-active {
       color: $white;
       background-color: $black;
+
+      &:hover {
+        background-color: $black;
+      }
     }
   }
 
@@ -90,6 +111,14 @@ button {
     border-radius: 40px;
     max-width: 306px;
     margin-bottom: 24px;
+
+    &:hover {
+      background-color: $grey9;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
 
     @include onDesktop {
       max-width: 100%;
@@ -112,6 +141,11 @@ button {
     padding: 6px 10px;
     border-radius: 20px;
 
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+
     @include onDesktop {
       padding: 8px 16px;
       text-wrap: nowrap;
@@ -128,9 +162,19 @@ button {
     color: $black2;
     border-radius: 40px;
     border: 1px solid black;
+    
+    &:hover {
+      background-color: $black3;
+      color: $blue-gray;
+    }
 
-    .active {
+    &.active {
       background-color: $light-gray-3;
+
+      &:hover {
+        background-color: $blue-gray;
+        color: $black2;
+      }
     }
   }
 
@@ -146,6 +190,14 @@ button {
     position: relative;
     z-index: 2;
 
+    &:hover {
+      background-color: $grey7;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
     @include onDesktop {
       padding: 16px;
     }
@@ -156,6 +208,11 @@ button {
     padding: 8px 32px;
     color: $white;
     border-radius: 40px;
+
+    &:hover {
+      background-color: $blue-gray;
+      color: $black;
+    }
 
     &.active {
       background-color: $blue-gray;
@@ -373,7 +430,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 0;
+    min-height: 0;
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
@@ -385,7 +442,7 @@ button {
     }
 
     &-active {
-      height: auto;
+      min-height: auto;
       pointer-events: all;
       opacity: 1;
     }
@@ -433,6 +490,11 @@ button {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $blue-gray;
+      }
     }
   }
 

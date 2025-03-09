@@ -3,8 +3,8 @@ import imgHeader from '../../../assets/images/imgHeader.png';
 
 const Form = () => {
   return (
-    <section className="section section-7">
-      <h2 className="section__title section-7__title">Як проходить навчання</h2>
+    <section className="section section-7" id='form'>
+      <h2 className="section__title section-7__title">Зв'язок з нами</h2>
 
       <article className="section-7__content">
         <div className='first'>
@@ -21,7 +21,7 @@ const Form = () => {
           </div>
 
           <p className="headline-3">
-            Залишаючи свої дані, я погоджуюся на обробку персональних даних відповідно до <span>Політики конфіденційності</span>
+            Залишаючи свої дані, я погоджуюся на обробку персональних даних відповідно до <span><a href="">Політики конфіденційності</a></span>
           </p>
 
           <button type="submit" className="button__black headline-23">

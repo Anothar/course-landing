@@ -69,9 +69,11 @@ const Header: React.FC<Props> = ({isOpenMenu, setIsOpenMenu}) => {
             <p className='header__icons_text headline-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
           </div>
 
-          <button className='button__white'>
-            Зарегистрироваться
-          </button>
+          <a href="#form">
+            <button className='button__white'>
+              Зарегистрироваться
+            </button>
+          </a>
         </div>
       </div>
     </header>
