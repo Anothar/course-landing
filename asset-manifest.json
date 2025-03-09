@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/course-landing/static/css/main.5c7cf840.css",
-    "main.js": "/course-landing/static/js/main.b4d8ea39.js",
+    "main.css": "/course-landing/static/css/main.f30bc9c5.css",
+    "main.js": "/course-landing/static/js/main.68e512b8.js",
     "static/media/spiker3.jpg": "/course-landing/static/media/spiker3.50df5d296962fcb89aa8.jpg",
     "static/media/student2.jpg": "/course-landing/static/media/student2.27767e6500c7d8ea01a9.jpg",
     "static/media/spiker2.jpg": "/course-landing/static/media/spiker2.78effe6139ceae65e133.jpg",
@@ -53,11 +53,11 @@
     "static/media/Email.svg": "/course-landing/static/media/Email.cc74383134c0978e67564e6418c2e7e7.svg",
     "static/media/Exit.svg": "/course-landing/static/media/Exit.6a4950816e1f919102c9bbe2fe7c62a7.svg",
     "static/media/burgerMenu.svg": "/course-landing/static/media/burgerMenu.e6906a1fb4f164cfb5e0db60ba454a81.svg",
-    "main.5c7cf840.css.map": "/course-landing/static/css/main.5c7cf840.css.map",
-    "main.b4d8ea39.js.map": "/course-landing/static/js/main.b4d8ea39.js.map"
+    "main.f30bc9c5.css.map": "/course-landing/static/css/main.f30bc9c5.css.map",
+    "main.68e512b8.js.map": "/course-landing/static/js/main.68e512b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c7cf840.css",
-    "static/js/main.b4d8ea39.js"
+    "static/css/main.f30bc9c5.css",
+    "static/js/main.68e512b8.js"
   ]
 }
